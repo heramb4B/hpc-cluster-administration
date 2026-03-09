@@ -70,4 +70,4 @@ This repository serves as a technical knowledge base for:
 ## Author
 
 Heramb  
-HPC Field Engineering Documentation (2025–2026)
+HPC Engineering Documentation (2025–2026)
