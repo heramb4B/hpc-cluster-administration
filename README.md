@@ -33,7 +33,7 @@ Unlike theoretical guides, these documents are based on **real troubleshooting, 
 
 ### Core Infrastructure Setup
 
-#### [1. xCAT - Cluster Provisioning](./xCAT_Installation.pdf)
+#### [1. xCAT - Cluster Provisioning](./xCAT%20Installation.pdf)
 
 **Production-tested on:** C-DAC Bengaluru (3,200 nodes), SLB, CABS
 
@@ -42,7 +42,7 @@ Unlike theoretical guides, these documents are based on **real troubleshooting, 
 - OS image deployment workflows
 - Network boot (PXE) setup for heterogeneous hardware
 
-#### [2. xCAT Verification & Troubleshooting](./xCAT_Verification.pdf)
+#### [2. xCAT Verification & Troubleshooting](./xCAT%20Verification.pdf)
 
 - Node status validation procedures
 - Common provisioning failures and fixes
@@ -53,7 +53,7 @@ Unlike theoretical guides, these documents are based on **real troubleshooting, 
 
 ### Time Synchronization
 
-#### [3. Chrony NTP - Time Sync](./Chrony_NTP_Server_&_Client_Configuration_with_xCAT.pdf)
+#### [3. Chrony NTP - Time Sync](./Chrony%20NTP%20Server%20&%20Client%20Configuration%20with%20xCAT.pdf)
 
 **Why it matters:** Critical for distributed job scheduling and log correlation
 
