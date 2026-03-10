@@ -153,7 +153,7 @@ Unlike theoretical guides, these documents are based on **real troubleshooting, 
 
 #### [11. High Performance Computing - Complete Guide](./High_Performance_Computing.pdf)
 
-**67 pages covering:**
+**81 pages covering:**
 
 - **Architecture:** Head nodes, compute nodes, storage systems, networking (InfiniBand vs Ethernet)
 - **Hardware:** RAID technologies (0/1/5/6/10), server components, GPU compute
