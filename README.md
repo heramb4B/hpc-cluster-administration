@@ -33,7 +33,7 @@ Unlike theoretical guides, these documents are based on **real troubleshooting, 
 
 ### Core Infrastructure Setup
 
-#### [1. xCAT - Cluster Provisioning](./xCAT%20Installation.pdf)
+#### [1. xCAT - Cluster Provisioning](./xCAT_Installation.pdf)
 
 **Production-tested on:** C-DAC Bengaluru (3,200 nodes), SLB, CABS
 
@@ -42,7 +42,7 @@ Unlike theoretical guides, these documents are based on **real troubleshooting, 
 - OS image deployment workflows
 - Network boot (PXE) setup for heterogeneous hardware
 
-#### [2. xCAT Verification & Troubleshooting](./xCAT%20Verification.pdf)
+#### [2. xCAT Verification & Troubleshooting](./xCAT_Verification.pdf)
 
 - Node status validation procedures
 - Common provisioning failures and fixes
@@ -53,7 +53,7 @@ Unlike theoretical guides, these documents are based on **real troubleshooting, 
 
 ### Time Synchronization
 
-#### [3. Chrony NTP - Time Sync](./Chrony%20NTP%20Server%20&%20Client%20Configuration%20with%20xCAT.pdf)
+#### [3. Chrony NTP - Time Sync](./Chrony_NTP_Server_and_Client_Configuration_with_xCAT.pdf)
 
 **Why it matters:** Critical for distributed job scheduling and log correlation
 
@@ -66,7 +66,7 @@ Unlike theoretical guides, these documents are based on **real troubleshooting, 
 
 ### Identity & Access Management
 
-#### [4. FreeIPA - Centralized Identity](./FreeIPA_Server_&_Client_Configuration.pdf)
+#### [4. FreeIPA - Centralized Identity](./FreeIPA_Server_and_Client_Configuration.pdf)
 
 **Production-tested on:** IISc ArtGarage, CABS, RRI
 
@@ -76,7 +76,7 @@ Unlike theoretical guides, these documents are based on **real troubleshooting, 
 - Kerberos authentication configuration
 - **Automation:** [FreeIPA Client Enrollment Script](./enroll_node.sh) — Auto-enrolls compute nodes from master
 
-#### [5. NIS - Legacy Identity Management](<./NIS_(Network_Information_Service)_Server_&_Client_Configuration.pdf>)
+#### [5. NIS - Legacy Identity Management](./NIS_Server_and_Client_Configuration.pdf)
 
 **When to use:** Legacy systems or simple setups
 
@@ -88,7 +88,7 @@ Unlike theoretical guides, these documents are based on **real troubleshooting, 
 
 ### Storage & File Systems
 
-#### [6. NFS - Network File System](./NFS_-_Client_and_Server_Config.pdf)
+#### [6. NFS - Network File System](./NFS_Client_and_Server_Config.pdf)
 
 **Production configs from:** NCRA, IUCAA, IIT Hyderabad
 
@@ -113,7 +113,7 @@ Unlike theoretical guides, these documents are based on **real troubleshooting, 
 - Resource limits and fair-share scheduling
 - Integration with xCAT provisioning
 
-#### [8. OpenPBS - Professional Job Scheduler](./OpenPBS_Concepts,_Config_&_Installation.pdf)
+#### [8. OpenPBS - Professional Job Scheduler](./OpenPBS_Concepts,_Config_and_Installation.pdf)
 
 **Production-tested on:** NCRA-TIFR, IISc ArtGarage
 
@@ -138,7 +138,7 @@ Unlike theoretical guides, these documents are based on **real troubleshooting, 
 - HPCM image capture failures (rsync disk issues)
 - Docker mom_logs directory exclude flags
 
-#### [10. H200 GPU Provisioning & IB Switch Config](./H200_Configuration_and_IB_Switch_Conf_ACREC+IISc_ArtGarage.pdf)
+#### [10. H200 GPU Provisioning & IB Switch Config](./H200_Configuration_and_IB_Switch_Conf_ACREC_and_IISc_ArtGarage.pdf)
 
 **Real deployment from:** ACTREC Tata Memorial, IISc (February 2026)
 
@@ -214,14 +214,14 @@ Automates FreeIPA client installation and enrollment across compute nodes from m
 
 ---
 
-## 🎓 Continuous Learning
+<!-- ## 🎓 Continuous Learning
 
 **Currently pursuing:**
 
 - Linux RHCSA (Red Hat Certified System Administrator)
 - Altair PBS Professional
 - Altair HPCWorks
-- Altair InsightPro
+- Altair InsightPro -->
 
 ---
 
