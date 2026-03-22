@@ -97,7 +97,7 @@ The collection includes general reference guides and step-by-step procedures for
 - Performance tuning for HPC workloads
 - Export management and permissions
 
-**Note:** For large-scale parallel storage, see Lustre (covered in [HPC General Documentation](./High_Performance_Computing.pdf))
+**Note:** For large-scale parallel storage, see Lustre (covered in [HPC General Documentation](./HPC%20General%20Reference.pdf))
 
 ---
 
