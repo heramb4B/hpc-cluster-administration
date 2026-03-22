@@ -1,0 +1,44 @@
+[root@compute1 ~]# dnf install freeipa-client -y
+
+[root@compute1 ~]# cat /etc/hosts
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+
+127.0.0.1   compute1.hpc.local compute1 localhost
+127.0.0.1   compute2.hpc.local compute2 localhost
+127.0.0.1   login.hpc.local login localhost
+127.0.0.1   storage.hpc.local storage localhost
+
+ipa-client-install --mkhomedir \
+--server=hpc-master.hpc.local \
+--domain=hpc.local \
+--realm=HPC.LOCAL \
+--hostname=$(hostname -f) \
+-p admin -w Admin1234 \
+--unattended
+
+Proceed with fixed values and no DNS discovery? [no]: yes
+Do you want to configure chrony with NTP server or pool address? [no]: yes
+Enter NTP source server addresses separated by comma, or press Enter to skip:
+Enter a NTP source pool address, or press Enter to skip:
+Client hostname: compute1.hpc.local
+Realm: HPC.LOCAL
+DNS Domain: hpc.local
+IPA Server: hpc-master.hpc.local
+BaseDN: dc=hpc,dc=local
+
+Continue to configure the system with these values? [no]: yes
+Synchronizing time
+No SRV records of NTP servers found and no NTP server or pool address was provided.
+Using default chrony configuration.
+Attempting to sync time with chronyc.
+Time synchronization was successful.
+User authorized to enroll computers: admin
+Password for admin@HPC.LOCAL: 
+
+[root@compute1 ~]# id amogh
+
+[root@compute1 ~]# su - amogh
+
+
+
