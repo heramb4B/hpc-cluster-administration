@@ -5,9 +5,9 @@
 
 # HPC Cluster Administration - Production Documentation
 
-**Real-world HPC infrastructure documentation from 11+ enterprise deployments**
+**HPC infrastructure documentation — reference guides, How-Tos, and real-world notes from enterprise deployments**
 
-📍 **Experience Base:** C-DAC (3,200-node cluster), IISc ArtGarage, IITM, NCRA-TIFR, IUCAA, Tata Memorial, SLB, and more  
+📍 **Experience Base:** Research institutions, government labs, and enterprise deployments across India  
 🔧 **Tech Stack:** xCAT, Slurm, OpenPBS, FreeIPA, Lustre, InfiniBand, NVIDIA H200/A100 GPUs  
 📊 **Scale:** From research labs to 3,200+ node production clusters
 
@@ -15,15 +15,15 @@
 
 ## 🎯 About This Repository
 
-This repository contains **production-grade documentation** created during hands-on work across **11+ client HPC environments** spanning research institutions, government labs, and corporate deployments.
+This repository contains **HPC documentation** spanning research institutions, government labs, and corporate deployments — covering core software stack setup, configuration How-Tos, and notes from real production work.
 
-Unlike theoretical guides, these documents are based on **real troubleshooting, actual deployments, and production incidents** — capturing what works in the field, not just what works in tutorials.
+The collection includes general reference guides and step-by-step procedures for the HPC software stack, alongside two documents grounded in direct field experience (GPU Node Troubleshooting and H200 GPU Provisioning).
 
 ### What Makes This Different
 
-✅ **Battle-tested procedures** from production environments  
-✅ **Troubleshooting sections** from real incidents  
-✅ **Multi-vendor integration** (HPE, Lenovo, Supermicro, NVIDIA)  
+✅ **Field-tested procedures** from real production environments (GPU troubleshooting, H200 provisioning)  
+✅ **Comprehensive How-To guides** for the core HPC software stack  
+✅ **Multi-vendor context** (HPE, Lenovo, Supermicro, NVIDIA)  
 ✅ **Scalability insights** from small labs to 3,200-node clusters  
 ✅ **GPU cluster specifics** (H200, A100 provisioning and troubleshooting)
 
@@ -35,7 +35,7 @@ Unlike theoretical guides, these documents are based on **real troubleshooting, 
 
 #### [1. xCAT - Cluster Provisioning](./xCAT_Installation.pdf)
 
-**Production-tested on:** C-DAC Bengaluru (3,200 nodes), SLB, CABS
+**Production-tested on:** Large-scale cluster (3,200 nodes), enterprise, and research environments
 
 - Master node installation and configuration
 - Node discovery and hardware management
@@ -68,7 +68,7 @@ Unlike theoretical guides, these documents are based on **real troubleshooting, 
 
 #### [4. FreeIPA - Centralized Identity](./FreeIPA_Server_and_Client_Configuration.pdf)
 
-**Production-tested on:** IISc ArtGarage, CABS, RRI
+**Production-tested on:** GPU cluster, bioinformatics HPC, and research institute environments
 
 - FreeIPA server installation and realm setup
 - Client enrollment automation (see [automation script](./enroll_node.sh))
@@ -90,7 +90,7 @@ Unlike theoretical guides, these documents are based on **real troubleshooting, 
 
 #### [6. NFS - Network File System](./NFS_Client_and_Server_Config.pdf)
 
-**Production configs from:** NCRA, IUCAA, IIT Hyderabad
+**Production configs from:** Astrophysics research institutes and university HPC environments
 
 - NFS server setup for shared storage
 - Client-side mount configuration
@@ -105,7 +105,7 @@ Unlike theoretical guides, these documents are based on **real troubleshooting, 
 
 #### [7. Slurm - Modern Workload Manager](./Slurm_Installation,_Configuration_and_Concepts.pdf)
 
-**Production-tested on:** C-DAC Bengaluru, SLB
+**Production-tested on:** Large-scale national cluster and enterprise oil & gas HPC environments
 
 - Controller and compute node setup
 - Partition and QoS configuration
@@ -115,7 +115,7 @@ Unlike theoretical guides, these documents are based on **real troubleshooting, 
 
 #### [8. OpenPBS - Professional Job Scheduler](./OpenPBS_Concepts,_Config_and_Installation.pdf)
 
-**Production-tested on:** NCRA-TIFR, IISc ArtGarage
+**Production-tested on:** Astrophysics research institute and GPU cluster environments
 
 - PBS server installation
 - Queue configuration and policies
@@ -130,7 +130,7 @@ Unlike theoretical guides, these documents are based on **real troubleshooting, 
 
 #### [9. GPU Node Troubleshooting](./GPU_NODE_Troubleshooting_Documentation.pdf)
 
-**Real incidents from:** IISc ArtGarage (January 2026)
+**Real incidents from:** GPU cluster environment (January 2026)
 
 - Disk space exhaustion on GPU nodes
 - Docker image/container cleanup procedures
@@ -138,9 +138,9 @@ Unlike theoretical guides, these documents are based on **real troubleshooting, 
 - HPCM image capture failures (rsync disk issues)
 - Docker mom_logs directory exclude flags
 
-#### [10. H200 GPU Provisioning & IB Switch Config](./H200_Configuration_and_IB_Switch_Conf_ACREC_and_IISc_ArtGarage.pdf)
+#### [10. H200 GPU Provisioning & IB Switch Config](./H200_GPU_Provisioning_and_IB_Switch_Configuration.pdf)
 
-**Real deployment from:** ACTREC Tata Memorial, IISc (February 2026)
+**Real deployment from:** Medical research HPC and GPU cluster environments (February 2026)
 
 - NVIDIA MLNX-OS InfiniBand switch firmware upgrade (3.10.5000 → 3.11.4002)
 - HPCM-based H200 GPU node provisioning workflow
@@ -198,19 +198,19 @@ Automates FreeIPA client installation and enrollment across compute nodes from m
 
 ### Client Environments Documented
 
-| Organization               | Cluster Scale       | Key Technologies                       | Focus Area                    |
-| -------------------------- | ------------------- | -------------------------------------- | ----------------------------- |
-| **C-DAC Bengaluru**        | 3,200 nodes, 5 pods | Lustre, InfiniBand, Multi-level fabric | Massive-scale orchestration   |
-| **C-DAC Pune**             | Medium              | JBOD, RAID, BMC/iLOS                   | Storage & hardware management |
-| **IISc ArtGarage**         | GPU cluster         | H200 nodes, PBS, Docker, HPCM          | GPU troubleshooting           |
-| **ACTREC (Tata Memorial)** | H200 GPUs           | HPCM, InfiniBand switch upgrade        | Medical research HPC          |
-| **NCRA-TIFR**              | Research            | PBS scheduling                         | Astrophysics workloads        |
-| **SLB**                    | Enterprise          | Slurm, cluster re-installation         | Oil & gas HPC                 |
-| **IITM**                   | Research            | Red Hat OpenShift                      | Container orchestration       |
-| **RRI Bengaluru**          | Research            | Preventive maintenance, monitoring     | System health checks          |
-| **IUCAA**                  | Research            | Hard disk troubleshooting              | Storage reliability           |
-| **CABS Bengaluru**         | Research            | Parallel File System, GPUs             | Bioinformatics HPC            |
-| **Sulzer**                 | Corporate           | App installation, re-deployment        | Engineering simulation        |
+| Environment                      | Cluster Scale       | Key Technologies                       | Focus Area                    |
+| -------------------------------- | ------------------- | -------------------------------------- | ----------------------------- |
+| **National HPC Centre (Site A)** | 3,200 nodes, 5 pods | Lustre, InfiniBand, Multi-level fabric | Massive-scale orchestration   |
+| **National HPC Centre (Site B)** | Medium              | JBOD, RAID, BMC/iLOS                   | Storage & hardware management |
+| **GPU Research Institute**       | GPU cluster         | H200 nodes, PBS, Docker, HPCM          | GPU troubleshooting           |
+| **Medical Research HPC**         | H200 GPUs           | HPCM, InfiniBand switch upgrade        | Medical research HPC          |
+| **Astrophysics Institute**       | Research            | PBS scheduling                         | Astrophysics workloads        |
+| **Enterprise (Oil & Gas)**       | Enterprise          | Slurm, cluster re-installation         | Oil & gas HPC                 |
+| **Technical University**         | Research            | Red Hat OpenShift                      | Container orchestration       |
+| **Research Institute (Site A)**  | Research            | Preventive maintenance, monitoring     | System health checks          |
+| **Research Institute (Site B)**  | Research            | Hard disk troubleshooting              | Storage reliability           |
+| **Bioinformatics HPC**           | Research            | Parallel File System, GPUs             | Bioinformatics HPC            |
+| **Engineering Corporation**      | Corporate           | App installation, re-deployment        | Engineering simulation        |
 
 ---
 
