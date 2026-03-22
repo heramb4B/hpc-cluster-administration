@@ -151,7 +151,7 @@ The collection includes general reference guides and step-by-step procedures for
 
 ### 📖 Comprehensive Reference
 
-#### [11. High Performance Computing - Complete Guide](./High_Performance_Computing.pdf)
+#### [11. High Performance Computing - Complete Guide](./HPC General Reference.pdf)
 
 **81 pages covering:**
 
@@ -229,7 +229,7 @@ Automates FreeIPA client installation and enrollment across compute nodes from m
 
 ### For HPC Administrators
 
-1. **Start with** [High Performance Computing guide](./High_Performance_Computing.pdf) for foundational concepts
+1. **Start with** [High Performance Computing guide](./HPC General Reference.pdf) for foundational concepts
 2. **Deploy using** component-specific guides (xCAT, Slurm, FreeIPA, etc.)
 3. **Troubleshoot with** the GPU and H200 documents for GPU-specific issues
 4. **Automate using** the FreeIPA enrollment script as a template
